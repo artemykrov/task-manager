@@ -407,14 +407,33 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 0 20px 100px 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .side-peek-item {
   border: 1px solid rgba(255, 255, 255, 0.1019607843);
   padding: 20px;
   border-radius: 20px;
+}
+.side-peek-item.tag-blue {
   background: radial-gradient(at top center, rgba(65, 165, 243, 0.2), rgba(255, 255, 255, 0.02));
+}
+.side-peek-item.tag-pink {
+  background: radial-gradient(at top center, rgba(247, 173, 196, 0.2), rgba(255, 255, 255, 0.02));
+}
+.side-peek-item.tag-purple {
+  background: radial-gradient(at top center, rgba(171, 72, 191, 0.2), rgba(255, 255, 255, 0.02));
+}
+.side-peek-item.tag-red {
+  background: radial-gradient(at top center, rgba(254, 77, 61, 0.2), rgba(255, 255, 255, 0.02));
+}
+.side-peek-item.tag-green {
+  background: radial-gradient(at top center, rgba(68, 150, 39, 0.2), rgba(255, 255, 255, 0.02));
+}
+.side-peek-item.tag-lime {
+  background: radial-gradient(at top center, rgba(72, 200, 132, 0.2), rgba(255, 255, 255, 0.02));
+}
+.side-peek-item {
   display: flex;
   flex-direction: column;
   gap: 20px;
