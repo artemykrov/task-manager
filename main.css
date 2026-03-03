@@ -452,7 +452,7 @@ body {
 .tag-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
 }
 
 .tag {
@@ -462,29 +462,54 @@ body {
   text-box-trim: trim-both;
   text-box-edge: cap alphabetic;
 }
-.tag.tag-lime {
-  background-color: rgba(72, 200, 132, 0.6);
-}
-.tag.tag-red {
-  background-color: rgba(254, 77, 61, 0.6);
-}
-.tag.tag-blue {
-  background-color: rgba(65, 165, 243, 0.6);
-}
-.tag.tag-pink {
-  background-color: rgba(247, 173, 196, 0.6);
-}
-.tag.tag-purple {
-  background-color: rgba(171, 72, 191, 0.6);
-}
-.tag.tag-green {
-  background-color: rgba(68, 150, 39, 0.6);
-}
 .tag::before {
   display: inline-block;
+  font-family: "RF Dewi", sans-serif;
+  font-weight: 500;
   content: "#";
   margin-right: 2px;
-  opacity: 0.4;
+}
+.tag.tag-lime {
+  background-color: rgba(72, 200, 132, 0.2);
+  border-color: rgba(72, 200, 132, 0.4);
+}
+.tag.tag-lime::before {
+  color: #48c884;
+}
+.tag.tag-red {
+  background-color: rgba(254, 77, 61, 0.2);
+  border-color: rgba(254, 77, 61, 0.4);
+}
+.tag.tag-red::before {
+  color: #fe4d3d;
+}
+.tag.tag-blue {
+  background-color: rgba(65, 165, 243, 0.2);
+  border-color: rgba(65, 165, 243, 0.4);
+}
+.tag.tag-blue::before {
+  color: #41a5f3;
+}
+.tag.tag-pink {
+  background-color: rgba(247, 173, 196, 0.2);
+  border-color: rgba(247, 173, 196, 0.4);
+}
+.tag.tag-pink::before {
+  color: #f7adc4;
+}
+.tag.tag-purple {
+  background-color: rgba(171, 72, 191, 0.2);
+  border-color: rgba(171, 72, 191, 0.4);
+}
+.tag.tag-purple::before {
+  color: #ab48bf;
+}
+.tag.tag-green {
+  background-color: rgba(68, 150, 39, 0.2);
+  border-color: rgba(68, 150, 39, 0.4);
+}
+.tag.tag-green::before {
+  color: #449627;
 }
 
 .button {

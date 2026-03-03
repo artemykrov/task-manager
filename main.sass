@@ -311,7 +311,7 @@ body
 .tag-container
   display: flex
   flex-wrap: wrap
-  gap: 5px
+  gap: 10px
 
 .tag
   padding: 8px 10px 8px 5px
@@ -321,24 +321,43 @@ body
   text-box-trim: trim-both
   text-box-edge: cap alphabetic
 
-  &.tag-lime
-    background-color: $tag-lime-60
-  &.tag-red
-    background-color: $tag-red-60
-  &.tag-blue
-    background-color: $tag-blue-60
-  &.tag-pink
-    background-color: $tag-pink-60
-  &.tag-purple
-    background-color: $tag-purple-60
-  &.tag-green
-    background-color: $tag-green-60
-
   &::before
     display: inline-block
+    font-family: $font-family
+    font-weight: 500
     content: '#'
     margin-right: 2px
-    opacity: .4
+
+  &.tag-lime
+    background-color: $tag-lime-20
+    border-color: $tag-lime-40
+    &::before
+      color: $tag-lime
+  &.tag-red
+    background-color: $tag-red-20
+    border-color: $tag-red-40
+    &::before
+      color: $tag-red
+  &.tag-blue
+    background-color: $tag-blue-20
+    border-color: $tag-blue-40
+    &::before
+      color: $tag-blue
+  &.tag-pink
+    background-color: $tag-pink-20
+    border-color: $tag-pink-40
+    &::before
+      color: $tag-pink
+  &.tag-purple
+    background-color: $tag-purple-20
+    border-color: $tag-purple-40
+    &::before
+      color: $tag-purple
+  &.tag-green
+    background-color: $tag-green-20
+    border-color: $tag-green-40
+    &::before
+      color: $tag-green
 
 // button
 
