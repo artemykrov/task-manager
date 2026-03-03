@@ -1,0 +1,31 @@
+:root {
+  --font-family-h2-text-36-reg: "RF Dewi";
+  --font-size-h2-text-36-reg: 36pxpx;
+  --font-weight-h2-text-36-reg: 400;
+  --font-family-h2-digits-36-reg: "RF Dewi Extended";
+  --font-size-h2-digits-36-reg: 36pxpx;
+  --font-weight-h2-digits-36-reg: 400;
+  --font-family-h3-text-24-reg: "RF Dewi";
+  --font-size-h3-text-24-reg: 24pxpx;
+  --font-weight-h3-text-24-reg: 400;
+  --font-family-button-text-16-reg: "RF Dewi";
+  --font-size-button-text-16-reg: 16pxpx;
+  --font-weight-button-text-16-reg: 400;
+  --font-family-digits-16-reg: "RF Dewi Extended";
+  --font-size-digits-16-reg: 16pxpx;
+  --font-weight-digits-16-reg: 400;
+  --font-family-text-small-reg: "RF Dewi";
+  --font-size-text-small-reg: 14pxpx;
+  --font-weight-text-small-reg: 400;
+  --font-family-h3-digits-24: "RF Dewi Extended";
+  --font-size-h3-digits-24: 24pxpx;
+  --font-weight-h3-digits-24: 400;
+  --effect-transparent-blur-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  --effect-modal-post-blur-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.2);
+}
+
+.DARK-transparent-stroke-gradient {
+  border: 1px solid;
+}
+
+/*# sourceMappingURL=style-classes.css.map */

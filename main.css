@@ -1,0 +1,511 @@
+:root {
+  --font-family-h2-text-36-reg: "RF Dewi";
+  --font-size-h2-text-36-reg: 36pxpx;
+  --font-weight-h2-text-36-reg: 400;
+  --font-family-h2-digits-36-reg: "RF Dewi Extended";
+  --font-size-h2-digits-36-reg: 36pxpx;
+  --font-weight-h2-digits-36-reg: 400;
+  --font-family-h3-text-24-reg: "RF Dewi";
+  --font-size-h3-text-24-reg: 24pxpx;
+  --font-weight-h3-text-24-reg: 400;
+  --font-family-button-text-16-reg: "RF Dewi";
+  --font-size-button-text-16-reg: 16pxpx;
+  --font-weight-button-text-16-reg: 400;
+  --font-family-digits-16-reg: "RF Dewi Extended";
+  --font-size-digits-16-reg: 16pxpx;
+  --font-weight-digits-16-reg: 400;
+  --font-family-text-small-reg: "RF Dewi";
+  --font-size-text-small-reg: 14pxpx;
+  --font-weight-text-small-reg: 400;
+  --font-family-h3-digits-24: "RF Dewi Extended";
+  --font-size-h3-digits-24: 24pxpx;
+  --font-weight-h3-digits-24: 400;
+  --effect-transparent-blur-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  --effect-modal-post-blur-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.2);
+}
+
+@font-face {
+  font-family: "RF Dewi";
+  font-weight: normal;
+  src: url("fonts/RFDewi-Regular.woff2");
+}
+@font-face {
+  font-family: "RF Dewi";
+  font-weight: 500;
+  src: url("fonts/RFDewi-Semibold.woff2");
+}
+@font-face {
+  font-family: "RF Dewi Extended";
+  font-weight: normal;
+  src: url("fonts/RFDewiExtended-Regular.woff2");
+}
+.h2-text-36-reg {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.h2-digits-36-reg {
+  font-family: "RF Dewi Extended", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.h3-text-24-reg {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.digits-16-reg {
+  font-family: "RF Dewi Extended", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.text-small-reg {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+body {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+:root {
+  --font-family-h2-text-36-reg: "RF Dewi";
+  --font-size-h2-text-36-reg: 36pxpx;
+  --font-weight-h2-text-36-reg: 400;
+  --font-family-h2-digits-36-reg: "RF Dewi Extended";
+  --font-size-h2-digits-36-reg: 36pxpx;
+  --font-weight-h2-digits-36-reg: 400;
+  --font-family-h3-text-24-reg: "RF Dewi";
+  --font-size-h3-text-24-reg: 24pxpx;
+  --font-weight-h3-text-24-reg: 400;
+  --font-family-button-text-16-reg: "RF Dewi";
+  --font-size-button-text-16-reg: 16pxpx;
+  --font-weight-button-text-16-reg: 400;
+  --font-family-digits-16-reg: "RF Dewi Extended";
+  --font-size-digits-16-reg: 16pxpx;
+  --font-weight-digits-16-reg: 400;
+  --font-family-text-small-reg: "RF Dewi";
+  --font-size-text-small-reg: 14pxpx;
+  --font-weight-text-small-reg: 400;
+  --font-family-h3-digits-24: "RF Dewi Extended";
+  --font-size-h3-digits-24: 24pxpx;
+  --font-weight-h3-digits-24: 400;
+  --effect-transparent-blur-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  --effect-modal-post-blur-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.2);
+}
+
+.DARK-transparent-stroke-gradient {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  color: #ffffff;
+}
+
+body {
+  background-color: #101010;
+  background-image: url("images/main-bg.png");
+  background-size: cover;
+}
+
+#calendar-page-wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+#calendar-wrapper {
+  width: 100vw;
+  height: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 20px 40px 100px 40px;
+  transition: 0.5s cubic-bezier(0.5, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#calendar-wrapper.side-peek-opened {
+  width: calc(100vw - 440px);
+  padding: 20px 0 100px 40px;
+}
+
+#calendar-top-group {
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#calendar-top-group-main {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#calendar-top-group-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#calendar-days-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+}
+
+.week-row {
+  display: flex;
+  flex: 1 1 100%;
+  overflow: hidden;
+}
+
+.calendar-day {
+  box-sizing: border-box;
+  padding: 5px;
+  flex: 1 1 100%;
+  display: flex;
+  min-width: 0;
+  cursor: pointer;
+}
+.calendar-day:hover .day-outer {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
+}
+.calendar-day.non-exist {
+  pointer-events: none;
+}
+.calendar-day.non-exist .day-outer {
+  background-color: transparent;
+}
+.calendar-day.holiday .day-outer {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.day-outer {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  background-color: rgba(255, 255, 255, 0.0196078431);
+  flex: 1 1 100%;
+  min-width: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.day-inner {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.calendar-day-top-line {
+  height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.calendar-day-top-line-left {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex: 1 1 100%;
+}
+
+.calendar-day-date {
+  opacity: 0.6;
+  display: inline-block;
+}
+
+.calendar-day-weekday {
+  opacity: 0.4;
+}
+
+.calendar-day-top-line-right {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border-radius: 100px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+.calendar-day-top-line-right * {
+  opacity: 0.4;
+}
+
+.calendar-day-items-wrapper {
+  padding-bottom: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  flex: 1 1 100%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.calendar-day-item {
+  padding: 0 5px 0 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.calendar-day-item:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+.calendar-day-item.tag-blue {
+  background-color: rgba(65, 165, 243, 0.2);
+}
+.calendar-day-item.tag-blue .post-icon {
+  fill: #41a5f3;
+}
+.calendar-day-item.tag-blue:hover {
+  background-color: rgba(65, 165, 243, 0.4);
+}
+.calendar-day-item.tag-lime {
+  background-color: rgba(72, 200, 132, 0.2);
+}
+.calendar-day-item.tag-lime .post-icon {
+  fill: #48c884;
+}
+.calendar-day-item.tag-lime:hover {
+  background-color: rgba(72, 200, 132, 0.4);
+}
+.calendar-day-item.tag-red {
+  background-color: rgba(254, 77, 61, 0.2);
+}
+.calendar-day-item.tag-red .post-icon {
+  fill: #fe4d3d;
+}
+.calendar-day-item.tag-red:hover {
+  background-color: rgba(254, 77, 61, 0.4);
+}
+.calendar-day-item.tag-pink {
+  background-color: rgba(247, 173, 196, 0.2);
+}
+.calendar-day-item.tag-pink .post-icon {
+  fill: #f7adc4;
+}
+.calendar-day-item.tag-pink:hover {
+  background-color: rgba(247, 173, 196, 0.4);
+}
+.calendar-day-item.tag-purple {
+  background-color: rgba(171, 72, 191, 0.2);
+}
+.calendar-day-item.tag-purple .post-icon {
+  fill: #ab48bf;
+}
+.calendar-day-item.tag-purple:hover {
+  background-color: rgba(171, 72, 191, 0.4);
+}
+
+.post-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  background-size: contain;
+  background-position: center center;
+}
+
+.calendar-day-item-heading {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  padding: 5px 0;
+}
+
+#side-peek-wrapper {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: auto;
+}
+#side-peek-wrapper::-webkit-scrollbar {
+  display: none;
+}
+#side-peek-wrapper {
+  flex-shrink: 0;
+  width: 440px;
+  overflow-y: auto;
+}
+
+#day-side-peek-top-group {
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(16px);
+}
+
+#day-side-peek-heading {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+#day-side-peek-date {
+  display: flex;
+  flex: 1 1 0;
+  gap: 10px;
+}
+
+#day-side-peek-close-button {
+  background-color: gray;
+  width: 60px;
+  height: 60px;
+}
+
+#side-peek-top-group-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#side-peek-posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px 100px 20px;
+}
+
+.side-peek-item {
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  padding: 20px;
+  border-radius: 20px;
+  background: radial-gradient(at top center, rgba(65, 165, 243, 0.2), rgba(255, 255, 255, 0.02));
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.side-peek-item-top-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side-peek-item-top-line {
+  display: flex;
+}
+
+.side-peek-item-top-line-left {
+  display: flex;
+  gap: 10px;
+  flex: 1 1 0;
+  align-items: center;
+}
+
+.side-peek-item-status {
+  width: 10px;
+  height: 10px;
+  background-color: #ffcc00;
+  border-radius: 10px;
+}
+
+.side-peek-item-tasks-container {
+  display: flex;
+  gap: 10px;
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  padding: 8px 10px 8px 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  border-radius: 10px;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+.tag.tag-lime {
+  background-color: rgba(72, 200, 132, 0.6);
+}
+.tag.tag-red {
+  background-color: rgba(254, 77, 61, 0.6);
+}
+.tag.tag-blue {
+  background-color: rgba(65, 165, 243, 0.6);
+}
+.tag.tag-pink {
+  background-color: rgba(247, 173, 196, 0.6);
+}
+.tag.tag-purple {
+  background-color: rgba(171, 72, 191, 0.6);
+}
+.tag.tag-green {
+  background-color: rgba(68, 150, 39, 0.6);
+}
+.tag::before {
+  display: inline-block;
+  content: "#";
+  margin-right: 2px;
+  opacity: 0.4;
+}
+
+.button {
+  font-family: "RF Dewi", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
+  padding: 8px 10px;
+  border-radius: 10px;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+  user-select: none;
+  cursor: pointer;
+}
+.button.deactivated {
+  background: rgba(255, 255, 255, 0.0196078431);
+  color: rgba(255, 255, 255, 0.4);
+}
+.button:hover {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.2));
+}
+
+/*# sourceMappingURL=main.css.map */

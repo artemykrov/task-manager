@@ -1,0 +1,103 @@
+// colors
+$dark-bg-color: #101010
+
+$dark-text-color: #ffffff
+$dark-text-color-deactivated: rgba(255, 255, 255, 0.4)
+$dark-text-color-inverted: #101010
+
+
+$dark-solid-stroke: #ffffff1a
+$dark-solid-stroke-active: #ffffff99
+$dark-solid-bg: #ffffff05
+$dark-solid-bg-light: rgba(255, 255, 255, 0.08)
+
+$post-status-work: #ffcc00
+$post-status-ready: #449627
+$post-status-published: #00b2ff
+
+
+$tag-blue: #41a5f3
+$tag-green: #449627
+$tag-red: #fe4d3d
+$tag-lime: #48c884
+$tag-purple: #ab48bf
+$tag-pink: #f7adc4
+
+$tag-blue-20: rgba(65, 165, 243, 0.2)
+$tag-green-20: rgba(68, 150, 39, 0.2)
+$tag-red-20: rgba(254, 77, 61, 0.2)
+$tag-lime-20: rgba(72, 200, 132, 0.2)
+$tag-purple-20: rgba(171, 72, 191, 0.2)
+$tag-pink-20: rgba(247, 173, 196, 0.2)
+
+$tag-blue-40: rgba(65, 165, 243, 0.4)
+$tag-green-40: rgba(68, 150, 39, 0.4)
+$tag-red-40: rgba(254, 77, 61, 0.4)
+$tag-lime-40: rgba(72, 200, 132, 0.4)
+$tag-purple-40: rgba(171, 72, 191, 0.4)
+$tag-pink-40: rgba(247, 173, 196, 0.4)
+
+$tag-blue-60: rgba(65, 165, 243, 0.6)
+$tag-green-60: rgba(68, 150, 39, 0.6)
+$tag-red-60: rgba(254, 77, 61, 0.6)
+$tag-lime-60: rgba(72, 200, 132, 0.6)
+$tag-purple-60: rgba(171, 72, 191, 0.6)
+$tag-pink-60: rgba(247, 173, 196, 0.6)
+
+
+$post-bg-main-tag-red: #ffffff05
+$post-bg-main-tag-blue: #ffffff05
+$post-bg-main-tag-pink: #ffffff05
+
+$post-ready-stroke: #00ff001a
+$post-bg-main-tag-lime: #ffffff05
+
+// gradients
+
+$DARK-bg-gradient-dark: linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1))
+$DARK-bg-gradient-dark-hovered: linear-gradient(90deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.2))
+$DARK-transparent-stroke-gradient: rgba(255, 255, 255, 0.1)
+$DARK-bg-gradient-light: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05))
+
+$item-lime-gradient: radial-gradient(at top center, $tag-lime-20, rgba(255,255,255,.02))
+$item-blue-gradient: radial-gradient(at top center, $tag-blue-20, rgba(255,255,255,.02))
+
+//text
+
+:root
+  --font-family-h2-text-36-reg: "RF Dewi"
+  --font-size-h2-text-36-reg: 36pxpx
+  --font-weight-h2-text-36-reg: 400
+  --font-family-h2-digits-36-reg: "RF Dewi Extended"
+  --font-size-h2-digits-36-reg: 36pxpx
+  --font-weight-h2-digits-36-reg: 400
+  --font-family-h3-text-24-reg: "RF Dewi"
+  --font-size-h3-text-24-reg: 24pxpx
+  --font-weight-h3-text-24-reg: 400
+  --font-family-button-text-16-reg: "RF Dewi"
+  --font-size-button-text-16-reg: 16pxpx
+  --font-weight-button-text-16-reg: 400
+  --font-family-digits-16-reg: "RF Dewi Extended"
+  --font-size-digits-16-reg: 16pxpx
+  --font-weight-digits-16-reg: 400
+  --font-family-text-small-reg: "RF Dewi"
+  --font-size-text-small-reg: 14pxpx
+  --font-weight-text-small-reg: 400
+  --font-family-h3-digits-24: "RF Dewi Extended"
+  --font-size-h3-digits-24: 24pxpx
+  --font-weight-h3-digits-24: 400
+  --effect-transparent-blur-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1)
+  --effect-modal-post-blur-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.2)
+
+
+// animation
+
+$cubic: cubic-bezier(.5,0,.2,1)
+
+@mixin hide-scrollbar
+  scrollbar-width: none
+  -ms-overflow-style: none
+  overflow: auto
+
+  &::-webkit-scrollbar
+    display: none

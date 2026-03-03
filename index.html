@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<section id="calendar-page-wrapper">
+    <section id="calendar-wrapper" class="side-peek-opened" onclick="this.classList.toggle('side-peek-opened')">
+        <div id="calendar-top-group">
+            <div id="calendar-top-group-prev" class="h3-text-24-reg">Январь</div>
+            <div id="calendar-top-group-main">
+                <div id="calendar-top-group-current" class="h2-text-36-reg">Февраль</div>
+                <div id="calendar-top-group-buttons">
+                    <div class="button DARK-transparent-stroke-gradient" onclick="this.classList.toggle('deactivated')">24 поста</div>
+                    <div class="button DARK-transparent-stroke-gradient" onclick="this.classList.toggle('deactivated')">12 задач</div>
+                </div>
+            </div>
+            <div id="calendar-top-group-next" class="h3-text-24-reg">Март</div>
+        </div>
+        <div id="calendar-days-wrapper">
+            <div class="week-row">
+                <div class="calendar-day non-exist">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day non-exist">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day non-exist">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day non-exist">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day non-exist">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day non-exist">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day holiday">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="week-row">
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">05</span><span class="calendar-day-weekday">ЧТ</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item tag-purple cards">
+                                    <svg class="post-icon">
+                                        <use xlink:href="icons/icons.svg#cards"></use>
+                                    </svg>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                                <div class="calendar-day-item tag-pink cards">
+                                    <svg class="post-icon">
+                                        <use xlink:href="icons/icons.svg#video"></use>
+                                    </svg>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                                <div class="calendar-day-item tag-blue cards">
+                                    <svg class="post-icon">
+                                        <use xlink:href="icons/icons.svg#cards"></use>
+                                    </svg>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                                <div class="calendar-day-item tag-red cards">
+                                    <svg class="post-icon">
+                                        <use xlink:href="icons/icons.svg#cards"></use>
+                                    </svg>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                                <div class="calendar-day-item tag-purple cards">
+                                    <svg class="post-icon">
+                                        <use xlink:href="icons/icons.svg#cards"></use>
+                                    </svg>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                                <div class="calendar-day-item tag-purple cards">
+                                    <svg class="post-icon">
+                                        <use xlink:href="icons/icons.svg#cards"></use>
+                                    </svg>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">05</span><span class="calendar-day-weekday">ЧТ</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item tag-purple cards">
+                                    <svg class="post-icon">
+                                        <use xlink:href="icons/icons.svg#cards"></use>
+                                    </svg>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                                <div class="calendar-day-item tag-pink cards">
+                                    <svg class="post-icon">
+                                        <use xlink:href="icons/icons.svg#video"></use>
+                                    </svg>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                                <div class="calendar-day-item tag-blue cards">
+                                    <svg class="post-icon">
+                                        <use xlink:href="icons/icons.svg#cards"></use>
+                                    </svg>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                                <div class="calendar-day-item tag-red cards">
+                                    <svg class="post-icon">
+                                        <use xlink:href="icons/icons.svg#cards"></use>
+                                    </svg>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                                <div class="calendar-day-item tag-purple cards">
+                                    <svg class="post-icon">
+                                        <use xlink:href="icons/icons.svg#cards"></use>
+                                    </svg>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                                <div class="calendar-day-item tag-purple cards">
+                                    <svg class="post-icon">
+                                        <use xlink:href="icons/icons.svg#cards"></use>
+                                    </svg>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day holiday">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day holiday">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="week-row">
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day holiday">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day holiday">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="week-row">
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day holiday">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day holiday">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="week-row">
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day holiday">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                            <div class="calendar-day-top-line">
+                                <div class="calendar-day-top-line-left">
+                                    <span class="calendar-day-date digits-16-reg">01</span><span class="calendar-day-weekday">ПН</span>
+                                </div>
+                                <div class="calendar-day-top-line-right text-small-reg">
+                                    <span class="calendar-day-done-tasks">1</span><span>/</span><span class="calendar-day-tasks-sum">7</span>
+                                </div>
+                            </div>
+                            <div class="calendar-day-items-wrapper">
+                                <div class="calendar-day-item">
+                                    <div class="post-icon text-small-reg">+</div>
+                                    <div class="calendar-day-item-heading text-small-reg">Название поста всякое разно dsf sdf sdfе</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-day non-exist">
+                    <div class="day-outer">
+                        <div class="day-inner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="side-peek-wrapper">
+        <div id="day-side-peek-top-group">
+            <div id="day-side-peek-heading">
+                <div id="day-side-peek-date">
+                    <div id="day-side-peek-date-number" class="h2-digits-36-reg">05</div>
+                    <div id="day-side-peek-date-weekday" class="h2-text-36-reg">Четверг</div>
+                </div>
+                <div id="day-side-peek-close-button"></div>
+            </div>
+            <div id="side-peek-top-group-buttons">
+                <div class="button DARK-transparent-stroke-gradient" onclick="this.classList.toggle('deactivated')">24 поста</div>
+                <div class="button DARK-transparent-stroke-gradient" onclick="this.classList.toggle('deactivated')">12 задач</div>
+                <div class="button DARK-transparent-stroke-gradient deactivated" onclick="this.classList.toggle('deactivated')">Готовые</div>
+            </div>
+        </div>
+        <div id="side-peek-posts-container">
+            <div class="side-peek-item">
+                <div class="side-peek-item-top-group">
+                    <div class="side-peek-item-top-line">
+                        <div class="side-peek-item-top-line-left">
+                            <div class="side-peek-item-time digits-16-reg">12:00</div>
+                            <div class="side-peek-item-status"></div>
+                        </div>
+                        <div class="side-peek-item-tasks-container">
+                            <div>ТКСТ</div>
+                            <div>КРТ</div>
+                        </div>
+                    </div>
+                    <div class="side-peek-item-heading h3-text-24-reg">Поздравление с Днём защитника отечества!</div>
+                </div>
+                <div class="tag-container">
+                    <div class="tag tag-pink">Проектники</div>
+                    <div class="tag tag-blue">CЮ</div>
+                    <div class="tag tag-red">День чего-то</div>
+                    <div class="tag tag-lime">Нет ТЗ</div>
+                    <div class="tag tag-blue">Мб перенесут</div>
+                    <div class="tag tag-purple">Проектники</div>
+                </div>
+            </div>
+            <div class="side-peek-item">
+                <div class="side-peek-item-top-group">
+                    <div class="side-peek-item-top-line">
+                        <div class="side-peek-item-top-line-left">
+                            <div class="side-peek-item-time digits-16-reg">12:00</div>
+                            <div class="side-peek-item-status"></div>
+                        </div>
+                        <div class="side-peek-item-tasks-container">
+                            <div>ТКСТ</div>
+                            <div>КРТ</div>
+                        </div>
+                    </div>
+                    <div class="side-peek-item-heading h3-text-24-reg">Поздравление с Днём защитника отечества!</div>
+                </div>
+                <div class="tag-container">
+                    <div class="tag tag-pink">Проектники</div>
+                    <div class="tag tag-blue">CЮ</div>
+                    <div class="tag tag-red">День чего-то</div>
+                    <div class="tag tag-lime">Нет ТЗ</div>
+                    <div class="tag tag-blue">Мб перенесут</div>
+                    <div class="tag tag-purple">Проектники</div>
+                </div>
+            </div>
+            <div class="side-peek-item">
+                <div class="side-peek-item-top-group">
+                    <div class="side-peek-item-top-line">
+                        <div class="side-peek-item-top-line-left">
+                            <div class="side-peek-item-time digits-16-reg">12:00</div>
+                            <div class="side-peek-item-status"></div>
+                        </div>
+                        <div class="side-peek-item-tasks-container">
+                            <div>ТКСТ</div>
+                            <div>КРТ</div>
+                        </div>
+                    </div>
+                    <div class="side-peek-item-heading h3-text-24-reg">Поздравление с Днём защитника отечества!</div>
+                </div>
+                <div class="tag-container">
+                    <div class="tag tag-pink">Проектники</div>
+                    <div class="tag tag-blue">CЮ</div>
+                    <div class="tag tag-red">День чего-то</div>
+                    <div class="tag tag-lime">Нет ТЗ</div>
+                    <div class="tag tag-blue">Мб перенесут</div>
+                    <div class="tag tag-purple">Проектники</div>
+                </div>
+            </div>
+            <div class="side-peek-item">
+                <div class="side-peek-item-top-group">
+                    <div class="side-peek-item-top-line">
+                        <div class="side-peek-item-top-line-left">
+                            <div class="side-peek-item-time digits-16-reg">12:00</div>
+                            <div class="side-peek-item-status"></div>
+                        </div>
+                        <div class="side-peek-item-tasks-container">
+                            <div>ТКСТ</div>
+                            <div>КРТ</div>
+                        </div>
+                    </div>
+                    <div class="side-peek-item-heading h3-text-24-reg">Поздравление с Днём защитника отечества!</div>
+                </div>
+                <div class="tag-container">
+                    <div class="tag tag-pink">Проектники</div>
+                    <div class="tag tag-blue">CЮ</div>
+                    <div class="tag tag-red">День чего-то</div>
+                    <div class="tag tag-lime">Нет ТЗ</div>
+                    <div class="tag tag-blue">Мб перенесут</div>
+                    <div class="tag tag-purple">Проектники</div>
+                </div>
+            </div>
+            <div class="side-peek-item">
+                <div class="side-peek-item-top-group">
+                    <div class="side-peek-item-top-line">
+                        <div class="side-peek-item-top-line-left">
+                            <div class="side-peek-item-time digits-16-reg">12:00</div>
+                            <div class="side-peek-item-status"></div>
+                        </div>
+                        <div class="side-peek-item-tasks-container">
+                            <div>ТКСТ</div>
+                            <div>КРТ</div>
+                        </div>
+                    </div>
+                    <div class="side-peek-item-heading h3-text-24-reg">Поздравление с Днём защитника отечества!</div>
+                </div>
+                <div class="tag-container">
+                    <div class="tag tag-pink">Проектники</div>
+                    <div class="tag tag-blue">CЮ</div>
+                    <div class="tag tag-red">День чего-то</div>
+                    <div class="tag tag-lime">Нет ТЗ</div>
+                    <div class="tag tag-blue">Мб перенесут</div>
+                    <div class="tag tag-purple">Проектники</div>
+                </div>
+            </div>
+            <div class="side-peek-item">
+                <div class="side-peek-item-top-group">
+                    <div class="side-peek-item-top-line">
+                        <div class="side-peek-item-top-line-left">
+                            <div class="side-peek-item-time digits-16-reg">12:00</div>
+                            <div class="side-peek-item-status"></div>
+                        </div>
+                        <div class="side-peek-item-tasks-container">
+                            <div>ТКСТ</div>
+                            <div>КРТ</div>
+                        </div>
+                    </div>
+                    <div class="side-peek-item-heading h3-text-24-reg">Поздравление с Днём защитника отечества!</div>
+                </div>
+                <div class="tag-container">
+                    <div class="tag tag-pink">Проектники</div>
+                    <div class="tag tag-blue">CЮ</div>
+                    <div class="tag tag-red">День чего-то</div>
+                    <div class="tag tag-lime">Нет ТЗ</div>
+                    <div class="tag tag-blue">Мб перенесут</div>
+                    <div class="tag tag-purple">Проектники</div>
+                </div>
+            </div>
+            <div class="side-peek-item">
+                <div class="side-peek-item-top-group">
+                    <div class="side-peek-item-top-line">
+                        <div class="side-peek-item-top-line-left">
+                            <div class="side-peek-item-time digits-16-reg">12:00</div>
+                            <div class="side-peek-item-status"></div>
+                        </div>
+                        <div class="side-peek-item-tasks-container">
+                            <div>ТКСТ</div>
+                            <div>КРТ</div>
+                        </div>
+                    </div>
+                    <div class="side-peek-item-heading h3-text-24-reg">Поздравление с Днём защитника отечества!</div>
+                </div>
+                <div class="tag-container">
+                    <div class="tag tag-pink">Проектники</div>
+                    <div class="tag tag-blue">CЮ</div>
+                    <div class="tag tag-red">День чего-то</div>
+                    <div class="tag tag-lime">Нет ТЗ</div>
+                    <div class="tag tag-blue">Мб перенесут</div>
+                    <div class="tag tag-purple">Проектники</div>
+                </div>
+            </div>
+            <div class="side-peek-item">
+                <div class="side-peek-item-top-group">
+                    <div class="side-peek-item-top-line">
+                        <div class="side-peek-item-top-line-left">
+                            <div class="side-peek-item-time digits-16-reg">12:00</div>
+                            <div class="side-peek-item-status"></div>
+                        </div>
+                        <div class="side-peek-item-tasks-container">
+                            <div>ТКСТ</div>
+                            <div>КРТ</div>
+                        </div>
+                    </div>
+                    <div class="side-peek-item-heading h3-text-24-reg">Поздравление с Днём защитника отечества!</div>
+                </div>
+                <div class="tag-container">
+                    <div class="tag tag-pink">Проектники</div>
+                    <div class="tag tag-blue">CЮ</div>
+                    <div class="tag tag-red">День чего-то</div>
+                    <div class="tag tag-lime">Нет ТЗ</div>
+                    <div class="tag tag-blue">Мб перенесут</div>
+                    <div class="tag tag-purple">Проектники</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+</body>
+</html>
